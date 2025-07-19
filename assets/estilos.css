@@ -1,9 +1,22 @@
 body {
-  background-color: #000;
+  background-color: #000000;
   color: #00ff00;
   font-family: "Courier New", monospace;
   padding: 2rem;
+  background-image: url('https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+
+nav {
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border: 1px solid #00ff00;
+}
+
 a {
   color: #00ff00;
   text-decoration: none;
@@ -11,7 +24,24 @@ a {
 }
 a:hover {
   text-decoration: underline;
+  color: #7fff00;
 }
-nav {
-  margin-bottom: 2rem;
+
+h1 {
+  font-size: 28px;
+  text-shadow: 0 0 5px #00ff00;
+  animation: parpadeo 1.2s infinite alternate;
+}
+
+@keyframes parpadeo {
+  from { opacity: 1; }
+  to { opacity: 0.8; }
+}
+
+p, ul {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+  max-width: 800px;
 }
